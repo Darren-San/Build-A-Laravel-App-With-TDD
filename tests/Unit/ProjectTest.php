@@ -4,6 +4,7 @@ namespace Tests\Unit;
 
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+// use Illuminate\Foundation\Testing\WithFaker;
 
 class ProjectTest extends TestCase
 {
@@ -14,6 +15,6 @@ class ProjectTest extends TestCase
   {
     $project = factory('App\Project')->create();
 
-    $this->asertEquals('/projects/' . $project->id, $project->path());
+    $this->assertEquals('/projects/' . $project->id, $project->path());
   }
 }
