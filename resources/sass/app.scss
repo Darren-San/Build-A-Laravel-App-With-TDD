@@ -3,4 +3,11 @@
 
 @tailwind components;
 
+/* Custom components */
+
+.button {
+  @apply bg-blue-custom text-white no-underline rounded-lg text-sm py-1 px-4;
+  box-shadow: 0 2px 7px 0 #b0eaff;
+}
+
 @tailwind utilities;
