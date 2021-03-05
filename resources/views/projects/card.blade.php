@@ -3,5 +3,5 @@
     <a href="{{ $project->path() }}" class="text-black no-underline">{{ $project->title }}</a>
   </h3>
   {{-- <div class="text-gray-400">{{ $project->description }}</div> --}}
-  <div class="text-gray-400">{{ str_limit($project->description, 100) }}</div>
+  <div class="text-gray-400 lg:break-words">{{ str_limit($project->description, 100) }}</div>
 </div>
