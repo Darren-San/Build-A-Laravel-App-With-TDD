@@ -1,3 +1,5 @@
+{{-- @TODO Add Tailwind styles --}}
+
 @extends('layouts.app')
 
 @section('content')
