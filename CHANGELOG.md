@@ -1,7 +1,18 @@
 ## Changelog
 
-### Update 23 [`placeholder`]()
+### Update 24 [`placeholder`]()
 - soon™
+
+### Update 23 [`c33f90a`](https://github.com/Darren-San/Build-A-Laravel-App-With-TDD/commit/63a6faf3e4486a052dac5cf78225159d1fe33876)
+- New Observer `TaskObserver`
+- New Feature test `incompleting_a_task`
+- New Feature test `deleting_a_task`
+- Renamed Feature test class `AcvtivityFeedTest` to `TriggerActivityTest`
+- Renamed tests from `TriggerActivityTest`
+  - `creating_a_project_records_activity` to `creating_a_project`
+  - `updating_a_project_records_activity` to `updating_a_project`
+  - `creating_a_new_task_records_project_activity` to `creating_a_new_task`
+  - `completing_a_new_task_records_project_activity` to `completing_a_task`
 
 ### Update 22 [`5389dfb`](https://github.com/Darren-San/Build-A-Laravel-App-With-TDD/commit/f07fc5fc9162cf631f8a21cfe10476092748d527)
 - New Feature test `a_task_can_be_completed`
@@ -13,8 +24,8 @@
 - New Feature test `creating_a_new_task_records_project_activity`
 - New Feature test `completing_a_new_task_records_project_activity`
 - Renamed tests from `AcvtivityFeedTest`
-  - `creating_a_project_generates_activity` into `creating_a_project_records_activity`
-  - `updating_a_project_generates_activity` into `updating_a_project_records_activity`
+  - `creating_a_project_generates_activity` to `creating_a_project_records_activity`
+  - `updating_a_project_generates_activity` to `updating_a_project_records_activity`
 - New Unit test `it_can_be_completed` in class `TaskTest`
 - New Feature test `creating_a_project_records_activity`
 - New Feature test `updating_a_project_records_activity`
@@ -22,6 +33,7 @@
 - New Feature test `completing_a_new_task_records_project_activity`
 
 ### Update 20 [`7bfdb2f`](https://github.com/Darren-San/Build-A-Laravel-App-With-TDD/commit/f5f8fa2162dc16cfb6565f4ecb1844272169a243)
+- New Observer `ProjectObserver`
 - Add activity feed feature
 - New feature test class `ActivityFeedTest`
   - New Feature test `creating_a_project_generates_activity`
