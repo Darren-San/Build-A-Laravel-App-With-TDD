@@ -1,1 +1,1 @@
-You updated a project
+You updated <span class="font-bold">a project</span>
