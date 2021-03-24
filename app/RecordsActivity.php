@@ -63,8 +63,8 @@ trait RecordsActivity
         ),
         'after' => array_except(
           $this->getChanges(), 'updated_at'
-          )
-        ];
-      }
+        )
+      ];
     }
   }
+}
