@@ -1,7 +1,39 @@
 ## Changelog
 
-### Update 24 [`placeholder`]()
+### Update 31 [`placeholder`]()
 - soon™
+
+### Update 30 [`4cb1d00`](https://github.com/Darren-San/Build-A-Laravel-App-With-TDD/commit/90430caac878eba653589f9d8e82ce6546a21b3f)
+- Now a User can be invited to a Project
+- New Feature Test class `InvitationsTest`:
+  - New Feature test `a_project_can_invite_a_user`
+- New Unit test `it_can_invite_a_user` in class `ProjectTest`
+
+### Update 29 [`b070128`](https://github.com/Darren-San/Build-A-Laravel-App-With-TDD/commit/4cb1d0040b9b5ab9a10f16bce41382cc1275015b)
+- Users with the appropriate permissions can now delete Projects
+- Routes refactor
+- New Feature Test class `ManageProjectsTest`:
+  - New Feature test `unauthorized_users_cannot_delete_projects`
+  - New Feature test `a_user_can_delete_a_project`
+
+
+### Update 28 [`fa89dea`](https://github.com/Darren-San/Build-A-Laravel-App-With-TDD/commit/b0701280228cdef9b112e2973cf92e55c4bb1998)
+- Activity feed now displays which User triggered the Activity
+- New Unit Test class `ActivityTest`:
+  - New Unit test `it_has_a_user`
+
+### Update 27 [`52f1310`](https://github.com/Darren-San/Build-A-Laravel-App-With-TDD/commit/fa89dea5a6d4c62c62c135f9088d0f762debaf6d)
+- All Activity functionality now as a Trait `RecordsActivity`
+  - This removes the observers for Project and Task
+
+### Update 26 [`d880b26`](https://github.com/Darren-San/Build-A-Laravel-App-With-TDD/commit/52f131059b10ed8f11eb37cc1a6c4c21f6719c23)
+- Activity feed now displays Project modifications
+
+### Update 25 [`ead5e5d`](https://github.com/Darren-San/Build-A-Laravel-App-With-TDD/commit/4b984a3d86dd288ceccd18ab85fd5aca7cb8014a)
+- Activity feed now displays which activity was made
+
+### Update 24 [`1793250`](https://github.com/Darren-San/Build-A-Laravel-App-With-TDD/commit/ead5e5dc6c9f6bff5e9cd838c18f4a660de0dabe)
+- Project view now shows User activity
 
 ### Update 23 [`c33f90a`](https://github.com/Darren-San/Build-A-Laravel-App-With-TDD/commit/63a6faf3e4486a052dac5cf78225159d1fe33876)
 - New Observer `TaskObserver`
