@@ -30,7 +30,7 @@
   <div class="control">
     <button type="submit" class="button is-link mr-2">{{ $buttonText }}</button>
 
-    <a href="{{ $project->path() }}">Cancel</a>
+    <a class="ml-2 inline-block rounded-lg font-medium leading-none py-2 px-3 focus:outline-none bg-indigo-50 text-indigo-700 no-underline" href="{{ $project->path() }}">Cancel</a>
   </div>
 </div>
 
