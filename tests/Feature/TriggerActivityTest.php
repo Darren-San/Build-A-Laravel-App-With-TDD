@@ -82,7 +82,7 @@ class TriggerActivityTest extends TestCase
   }
 
   /** @test */
-  public function incompleting_a_task()
+  public function uncompleting_a_task()
   {
     $project = ProjectFactory::withTasks(1)->create();
 
