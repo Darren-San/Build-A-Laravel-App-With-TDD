@@ -1,7 +1,30 @@
 ## Changelog
 
-### Update 31 [`placeholder`]()
+### Update 35 [`placeholder`]()
 - soon™
+
+### Update 34 [`placeholder`]()
+- Errors now display on the project view forms
+- Updated Feature tests in class `InvitationsTest`
+  - `non_owners_may_not_invite_users`
+  - `the_email_address_must_be_associated_with_a_valid_birdboard_account`
+
+### Update 33 [`placeholder`]()
+- Improved User invitation to a project
+- Unit Test updates in `InvitationsTest`
+  - Renamed `a_project_can_invite_a_user` as `a_project_owner_can_invite_a_user`
+  - New Unit test `non_owners_may_not_invite_users`
+  - New Unit test `the_email_address_must_be_associated_with_a_valid_birdboard_account`
+  - New Unit test `invited_users_may_update_project_details`
+
+### Update 32 [`placeholder`]()
+- Project page now displays involved users' icons on top
+
+### Update 31 [`placeholder`]()
+- Project Dashboard now shows Accessible Projects
+- New Feature test `unauthorized_users_cannot_delete_projects` in `ManageProjectsTest`
+- New Unit Test class `UserTest`
+  - New Unit test `a_user_has_accesible_projects`
 
 ### Update 30 [`4cb1d00`](https://github.com/Darren-San/Build-A-Laravel-App-With-TDD/commit/90430caac878eba653589f9d8e82ce6546a21b3f)
 - Now a User can be invited to a Project

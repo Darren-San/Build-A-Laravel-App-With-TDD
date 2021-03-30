@@ -14,9 +14,6 @@ class InvitationsTest extends TestCase
   /** @test */
   function non_owners_may_not_invite_users()
   {
-    // $this->actingAs(factory(User::class)->create())
-    //   ->post(ProjectFactory::create()->path() . '/invitations')
-    //   ->assertStatus(403);
     $project = ProjectFactory::create();
     $user = factory(User::class)->create();
 
@@ -38,8 +35,6 @@ class InvitationsTest extends TestCase
   /** @test */
   function a_project_owner_can_invite_a_user()
   {
-    // $this->withoutExceptionHandling();
-
     $project = ProjectFactory::create();
 
     $userToInvite = factory(User::class)->create();
