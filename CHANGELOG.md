@@ -3,13 +3,13 @@
 ### Update 35 [`placeholder`]()
 - soon™
 
-### Update 34 [`placeholder`]()
+### Update 34 [`8836fa8`](https://github.com/Darren-San/Build-A-Laravel-App-With-TDD/commit/080f967ba80cdec81b7423fa6900f6d33321af00)
 - Errors now display on the project view forms
 - Updated Feature tests in class `InvitationsTest`
   - `non_owners_may_not_invite_users`
   - `the_email_address_must_be_associated_with_a_valid_birdboard_account`
 
-### Update 33 [`placeholder`]()
+### Update 33 [`148be9e`](https://github.com/Darren-San/Build-A-Laravel-App-With-TDD/commit/8836fa86835d48c3959af9e8edc0ad80c51cb13e)
 - Improved User invitation to a project
 - Unit Test updates in `InvitationsTest`
   - Renamed `a_project_can_invite_a_user` as `a_project_owner_can_invite_a_user`
@@ -17,10 +17,10 @@
   - New Unit test `the_email_address_must_be_associated_with_a_valid_birdboard_account`
   - New Unit test `invited_users_may_update_project_details`
 
-### Update 32 [`placeholder`]()
+### Update 32 [`8ad7238`](https://github.com/Darren-San/Build-A-Laravel-App-With-TDD/commit/148be9e3fe9ff79e58a3f903b123db7d88e65fdd)
 - Project page now displays involved users' icons on top
 
-### Update 31 [`placeholder`]()
+### Update 31 [`2b4d4a8`](https://github.com/Darren-San/Build-A-Laravel-App-With-TDD/commit/917dce2950720de2fb2d478a5ef7d9db5d772143)
 - Project Dashboard now shows Accessible Projects
 - New Feature test `unauthorized_users_cannot_delete_projects` in `ManageProjectsTest`
 - New Unit Test class `UserTest`
