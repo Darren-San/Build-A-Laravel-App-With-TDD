@@ -1,0 +1,20 @@
+.button {
+  @apply bg-button no-underline rounded-lg text-sm py-2 px-5;
+  color: white;
+
+  .theme-light & {
+    box-shadow: 0 2px 7px 0 #b0eaff;
+  }
+
+  .theme-dark & {
+    box-shadow: 0 2px 7px 0 #00658b;
+  }
+}
+
+.button-light {
+  @apply ml-2 inline-block rounded-lg font-medium leading-none py-2 px-3 bg-indigo-50 text-indigo-700 no-underline;
+}
+
+.button-dark {
+  @apply ml-2 inline-block rounded-lg font-medium leading-none py-2 px-3 bg-indigo-900 text-indigo-50 no-underline;
+}

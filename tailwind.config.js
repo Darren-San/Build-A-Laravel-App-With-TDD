@@ -30,6 +30,12 @@ module.exports = {
       indigo: colors.indigo,
       purple: colors.violet,
       pink: colors.pink,
+
+      default: 'var(--text-default-color)',
+      accent: 'var(--text-accent-color)',
+      'accent-light': 'var(--text-accent-light-color)',
+      muted: 'var(--text-muted-color)',
+      'muted-light': 'var(--text-muted-light-color)',
     },
     spacing: {
       px: '1px',
@@ -75,7 +81,13 @@ module.exports = {
       pulse: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       bounce: 'bounce 1s infinite',
     },
-    backgroundColor: (theme) => theme('colors'),
+    backgroundColor: theme => ({
+           ...theme('colors'),
+           page: 'var(--page-background-color)',
+           card: 'var(--card-background-color)',
+           button: 'var(--button-background-color)',
+           header: 'var(--header-background-color)'
+         }),
     backgroundImage: {
       none: 'none',
       'gradient-to-t': 'linear-gradient(to top, var(--tw-gradient-stops))',

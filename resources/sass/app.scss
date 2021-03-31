@@ -1,33 +1,24 @@
-// Variables
 @import 'variables';
 
 @tailwind base;
 
 @tailwind components;
 
-
 /* Custom components */
 
-.button {
-  @apply bg-blue-custom text-white no-underline rounded-lg text-sm py-1 px-4;
-  box-shadow: 0 2px 7px 0 #b0eaff;
+@import 'themes/light';
+@import 'themes/dark';
+
+@import 'components/button';
+@import 'components/card';
+
+body,
+button {
+    @apply text-default;
 }
 
-.card {
-  @apply bg-white p-5 rounded-lg shadow;
-}
-
-h1 {
-  @apply text-2xl;
-}
-h2 {
-  @apply text-xl;
-}
-h3 {
-  @apply text-lg;
-}
-a {
-  @apply text-blue-600 underline;
+.section {
+    @apply px-8;
 }
 
 @tailwind utilities;
