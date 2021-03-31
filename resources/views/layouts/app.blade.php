@@ -5,18 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>{{ config('app.name', 'Laravel') }}
-    </title>
+    <title>{{ config('app.name', 'Birdboard') }}</title>
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer>
-    </script>
+    <script src="{{ asset('js/app.js') }}" defer></script>
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
   </head>
-  <body class="theme-dark bg-page">
+  <body class="theme-light bg-page">
     <div id="app">
       <nav class="bg-header section">
         <div class="container mx-auto">
@@ -35,7 +33,7 @@
               </a>
             </h1>
             <div>
-              <div class="flex justify-between items-end w-full">
+              <div class="flex items-center ml-auto">
                 <!-- Authentication Links -->
                 @guest
                 <div class="flex justify-between items-end w-full">
@@ -49,26 +47,20 @@
                 </div>
                 @endif
                 @else
-                <a
-                  class="button-light"
-                  href="#"
-                  role="button"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  v-pre
-                >
-                  {{ Auth::user()->name }}
-                </a>
-                {{-- <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                  <a class="ml-2 inline-block rounded-lg font-medium leading-none py-2 px-3 focus:outline-none bg-indigo-50 text-indigo-700 no-underline" href="{{ route('logout') }}"
-                     onclick="event.preventDefault();
-                              document.getElementById('logout-form').submit();">
-                    {{ __('Logout') }}
+                  <theme-switcher></theme-switcher>
+
+                  <img width="35"
+                    class="rounded-full mx-auto"
+                    src="{{ gravatar_url(auth()->user()->email) }}">
+                  <a
+                    class="button-light"
+                    href="#" role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    v-pre>
+                    {{ Auth::user()->name }}
                   </a>
-                  <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                    @csrf
-                  </form>
-                </div> --}}
                 @endguest
               </div>
             </div>
