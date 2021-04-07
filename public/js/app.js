@@ -38719,6 +38719,7 @@ var render = function() {
                 "button",
                 {
                   staticClass: "inline-flex items-center",
+                  attrs: { type: "button" },
                   on: { click: _vm.addTask }
                 },
                 [
@@ -38776,6 +38777,7 @@ var render = function() {
               "button",
               {
                 staticClass: "button is-outlined mr-4",
+                attrs: { type: "button" },
                 on: {
                   click: function($event) {
                     return _vm.$modal.hide("new-project")
